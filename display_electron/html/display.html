@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+    body {
+        overflow:hidden;
+    }
+    .fullscreen-video {
+        position: fixed;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: -10;
+    }
+    .fullscreen-image {
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+        background-size: cover;
+    }
+</style>
+
+<!-- <p id="demo_box"></p> -->
+<p type="text" id="text"></p>
+<div id="demo_box">
+    <p id="demo"></p>
+    <p id="info"></p>
+    <!-- <button id="btn">Click</button> -->
+    <!-- <div id="response-container"></div> -->
+    <img class=fullscreen-image id="display_image">
+        <!-- Your browser does not support the image tag. -->
+    </img>
+    <video class="fullscreen-video" id="display_video">
+        <!-- Your browser does not support the video tag. -->
+    </video>
+
+    <!-- <iframe
+        src="https://24h.pchome.com.tw/?gclid=EAIaIQobChMI2t7B---p-gIVWFlgCh2QnwQkEAAYASAAEgLsWvD_BwE" 
+        width="80%"
+        height="500"
+        allowfullscreen>
+    </iframe> -->
+
+</div>
+<script src="../js/renderer.js"></script>
+</body>
+</html>

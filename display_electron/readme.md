@@ -1,0 +1,1 @@
+pyenv environment: digital_signage
